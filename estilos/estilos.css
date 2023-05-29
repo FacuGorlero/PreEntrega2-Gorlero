@@ -1,0 +1,195 @@
+*{
+    margin: 0%;
+    padding: 0%;
+    box-sizing: border-box;
+}
+/* Letra */
+.titulo{
+font-family: 'Dancing Script', cursive;
+}
+.textos{
+font-family: 'Varela Round', sans-serif;
+}
+h1{
+    font-size: 60px;
+}
+.header{
+    display: flex;
+    justify-content: center;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    color: azure;
+}
+
+.navbar{
+    border-top: gray 1px solid;
+    border-bottom: gray 1px solid;
+} 
+.navbar-collapse {
+    justify-content: center;
+}
+
+body {
+    background-image: url(../assets/imagenes/fondo4.jpg);
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+    padding-bottom: 10em;
+    position: relative;
+    min-height: 100vh;
+}
+.btn-primary{
+    --bs-btn-color: black;
+    --bs-btn-bg: white;
+    --bs-btn-border-color: white;
+    --bs-btn-hover-color: white;
+    --bs-btn-hover-bg: gray;
+    --bs-btn-hover-border-color: gray;
+
+}
+.button{
+    display: flex;
+    padding-top: 20%;
+    padding-left: 10%;
+    justify-content: left;
+    
+}
+
+footer{
+    width: 100%;
+    padding: 1em 0;
+    position: absolute;
+    text-align: center;
+    bottom: 0; 
+}
+.iconos-redes-sociales a{
+    color: azure;
+    width: 50px;
+    height: 50px;
+    display:flex;
+    padding: 2px;
+    margin: 5px;
+    align-items: center;
+    justify-content: center;
+    border: 2px solid white;
+    border-radius: 50%;
+    transition: all 0.2 e;
+}
+.iconos-redes-sociales a:hover {
+    background-color: white;
+    border: 2px solid black;
+ } 
+.iconos-redes-sociales a:hover i{
+color: black;
+}
+
+/* Sucursales */
+
+.carousel{
+    margin-top: 10%;
+}
+
+
+.locales .carousel-inner img{
+ 
+  height: 500px;
+} 
+@media (max-width: 767px){
+    .locales .carousel-inner img{
+        height: 400px;
+        width: 400px;
+    }
+}
+@media (max-height: 850px){
+    .locales .carousel-inner img{
+        height: 400px;
+        width: 300px;
+    }
+}
+@media (max-height: 760px){
+    .locales .carousel-inner img{
+        height: 250px;
+        width: 200px;
+    }
+}
+@media (max-width: 991px){
+    .navbar{
+        border-top: none;
+        border-bottom: none;
+    }
+}
+
+/* Producciones */
+
+.container-galeria{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    padding: 20px;
+    grid-gap: 10px;
+}
+.imagen-galeria{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+.galeria-item:nth-child(2){
+    grid-column-start: span 2;
+
+}
+.galeria-item:nth-child(7){
+    grid-row-start: span 2;
+    grid-column-start: span 2;
+}
+/* precios */
+
+.listaprecios{
+    margin-top: 3%;
+    display: inline-block;
+    position: absolute;
+    text-align: center;
+    width: 100%;
+    align-items: center;
+    font-size: 20px;
+}
+.Precios{
+    font-size: 60px;
+}
+@media (max-width: 767px){
+    .listaprecios{
+        font-size: 10px;
+        margin-top: 1%;
+    }
+    .Precios{
+        font-size: 40px;
+    }
+}
+@media (max-height: 700px){
+    .listaprecios{
+        font-size: 5px;
+        margin-top: 0%;
+    }
+    .Precios{
+        font-size: 30px;
+    }
+}
+
+/* Tienda */
+
+.galeriatienda{
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+   
+}
+
+.caja img{
+    width: 220px;
+    height: 280px;
+    border-radius: 30px;
+}
+.caja{
+    margin: 15px;
+    text-align: center;
+    color: white !important;
+}
