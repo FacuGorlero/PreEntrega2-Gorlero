@@ -118,6 +118,12 @@ color: black;
         border-bottom: none;
     }
 }
+@media (max-height:731px){
+    .locales .carousel-inner img{
+        height: 150px;
+        width: 100px;
+    }
+}
 
 /* Producciones */
 
